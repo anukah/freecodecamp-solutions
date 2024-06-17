@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="heading">
+        <h1 id="title">Job Application Form For Junior Developer Positio</h1>
+        <p id="description">Please fill out this form.</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+            <div id="input-fields">
+                <label id="name-label"><b>Name:</b></label>
+                <input id="name" type="text" name="name" class="form" required placeholder="Full Name"><br><br>
+
+                <label id="email-label"><b>Email:</b></label>
+                <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br><br>
+
+                <label id="number-label"><b>Age:</b></label>
+                <input id="number" type="number" name="number" class="form" min="5" max="99" required placeholder="12+"><br><br>
+            </div>
+
+            <div id="dropdown-div">
+                <label id="dropdown-label"><strong>Programming language you are expert at:</strong></label><br>
+                <select id="dropdown" name="code-lang" class="form">
+                    <option value="C">C (Programming Language)</option>
+                    <option value="Python">Python</option>
+                    <option value="C#">C#</option>
+                    <option value="PHP">PHP</option>
+                    <option value="JS">JavaScript</option>
+                    <option value="Go">Go (Programming Language)</option>
+                    <option value="Ruby">Ruby on Rails</option>
+                    <option value="C++">C++</option>
+                    <option value="Java">Java</option>
+                </select><br><br>
+            </div>
+
+            <div id="button-area">
+                <label id="job-label"><b>Employment Status:</b></label><br>
+                <input type="radio" class="radio-inline" name="employment-status" value="employed" checked> Employed<br>
+                <input type="radio" class="radio-inline" name="employment-status" value="freelancer"> Freelancer<br>
+                <input type="radio" class="radio-inline" name="employment-status" value="looking"> Looking for a job<br>
+                <input type="radio" class="radio-inline" name="employment-status" value="student"> Student<br><br>
+            </div>
+
+            <div id="button-area">
+                <label id="os-label"><b>Operating system experience:</b></label><br>
+                <input type="checkbox" name="os" value="windows" checked> Windows<br>
+                <input type="checkbox" name="os" value="linux"> Linux<br>
+                <input type="checkbox" name="os" value="mac"> Mac<br><br>
+            </div>
+
+            <div id="textarea-area">
+                <label id="comments-label">Why do you think we should hire you?</label><br>
+                <textarea id="comments" class="form" placeholder="Please feel free to write anything.."></textarea><br><br>
+            </div>
+
+            <div id="submit-div">
+                <input id="submit" type="submit" class="form" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
